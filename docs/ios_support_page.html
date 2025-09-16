@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Forager Support - Edible Plant Identification App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #007AFF, #5856D6);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+        }
+        
+        h1 {
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #86868b;
+            font-size: 18px;
+        }
+        
+        .support-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .support-section h2 {
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            color: #515154;
+        }
+        
+        .contact-form {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1d1d1f;
+        }
+        
+        input, textarea, select {
+            padding: 12px;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #007AFF;
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: #007AFF;
+            color: white;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+        
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background: #f1f3f4;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .contact-info a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            .support-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🌿</div>
+            <h1>Plant Forager Support</h1>
+            <p class="subtitle">Get help identifying and foraging edible plants safely</p>
+            <div style="margin-top: 20px;">
+                <a href="https://apps.apple.com/app/id6752524923" 
+                   style="display: inline-block; background: #007AFF; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background 0.3s ease;"
+                   onmouseover="this.style.background='#0056b3'" 
+                   onmouseout="this.style.background='#007AFF'">
+                    📱 Download Plant Forager
+                </a>
+            </div>
+        </header>
+        
+        <div class="support-section">
+            <h2>📋 Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How accurate is the plant identification?</div>
+                <div class="faq-answer">Plant Forager uses advanced AI with dual-modal recognition (leaf and flower photos) for high accuracy. However, always verify with multiple sources and never consume any plant without 100% positive identification.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Does the app work offline?</div>
+                <div class="faq-answer">Yes! Plant Forager includes offline mode so you can identify plants even in remote locations without internet access. The comprehensive database is stored locally on your device.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I use the safety warnings feature?</div>
+                <div class="faq-answer">When identifying a plant, look for the red warning icons that indicate toxic look-alikes. Always read the full safety information before considering any plant for consumption.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I get location-specific plant recommendations?</div>
+                <div class="faq-answer">Yes! Enable location services to get recommendations for edible plants native to your area and see what's in season through our seasonal calendar feature.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I take the best photos for identification?</div>
+                <div class="faq-answer">For best results, take clear, well-lit photos of both leaves and flowers. Capture the whole plant if possible, including stems and growth pattern. Avoid shadows and blurry images.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is it safe for beginners to use this app?</div>
+                <div class="faq-answer">Plant Forager is designed with safety first, featuring toxic look-alike warnings and expert-verified information. However, beginners should also consult field guides and experienced foragers before consuming any wild plants.</div>
+            </div>
+        </div>
+        
+        <div class="support-section">
+            <h2>📞 Contact Us</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Issue Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="identification">Plant Identification Issue</option>
+                        <option value="safety">Safety Concern</option>
+                        <option value="location">Location/GPS Problem</option>
+                        <option value="offline">Offline Mode Issue</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="device">Device Information</label>
+                    <input type="text" id="device" name="device" placeholder="e.g., iPhone 14 Pro, iOS 17.1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Please describe your issue in detail. For plant identification problems, include details about the photo quality, lighting conditions, and what plant you were trying to identify..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <p><strong>Response Time:</strong> We typically respond within 24 hours</p>
+                <p><strong>Email:</strong> <a href="mailto:tmapps25@gmail.com">tmapps25@gmail.com</a></p>
+                <p><strong>Developer:</strong> Tal Maayani</p>
+            </div>
+        </div>
+        
+        <div class="support-section">
+            <h2>📚 Additional Resources</h2>
+            <ul style="padding-left: 20px; color: #515154;">
+                <li style="margin-bottom: 8px;"><a href="https://apps.apple.com/app/id6752524923" style="color: #007AFF; text-decoration: none;">📱 Download Plant Forager</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" style="color: #007AFF; text-decoration: none;">Plant Identification Guide</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" style="color: #007AFF; text-decoration: none;">Safety Guidelines for Foraging</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" style="color: #007AFF; text-decoration: none;">Seasonal Foraging Calendar</a></li>
+                <li style="margin-bottom: 8px;"><a href="privacy-policy.html" style="color: #007AFF; text-decoration: none;">Privacy Policy</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" style="color: #007AFF; text-decoration: none;">Terms of Service</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
